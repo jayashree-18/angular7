@@ -1,0 +1,12 @@
+
+<div>
+  <input type="text" #searchbox  [value]="selectedValue" (keyup.enter)="searchItem(searchbox)">
+</div>
+
+<div>
+  <ul>
+    <li *ngFor="let role of data" (click)="onSelectItem(role)">
+     <a>{{role.name}}</a> 
+    </li>
+  </ul>
+  </div>
